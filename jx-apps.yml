@@ -1,3 +1,8 @@
 apps:
 - name: jenkins-x/nodey431
   version: 0.0.6
+- name: dev/nodey431
+  version: 0.0.6
+repositories:
+- name: dev
+  url: http://bucketrepo/bucketrepo/charts/
