@@ -1,1 +1,6 @@
-defaultNamespace: ""
+apps:
+- name: dev/nodey431
+  version: 0.0.7
+repositories:
+- name: dev
+  url: http://bucketrepo/bucketrepo/charts/
