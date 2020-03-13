@@ -1,0 +1,95 @@
+
+Showing logs for build [32mjstrachan-environment-bucketrep-xbw7d-1[0m stage [32mpr-checks[0m and container [32mstep-credential-initializer-x9qlr[0m
+{"level":"warn","ts":1584112805.703213,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1584112805.7037995,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mjstrachan-environment-bucketrep-xbw7d-1[0m stage [32mpr-checks[0m and container [32mstep-working-dir-initializer-5z6v6[0m
+{"level":"warn","ts":1584112807.127328,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1584112807.1294188,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mjstrachan-environment-bucketrep-xbw7d-1[0m stage [32mpr-checks[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mjstrachan-environment-bucketrep-xbw7d-1[0m stage [32mpr-checks[0m and container [32mstep-git-source-jstrachan-environment-bucketrep-xbw7d-qlkxv[0m
+{"level":"warn","ts":1584112813.2809057,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1584112814.3858683,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*********/environment-bucketrepo-staging.git @ master in path /workspace/source"}
+
+Showing logs for build [32mjstrachan-environment-bucketrep-xbw7d-1[0m stage [32mpr-checks[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:afb6294ed13d01a63e3fb921a79a8386905e0e23,11:7eb69ee9d7227242fc36f6f5e16cdfa39d4d3e6e
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git fetch origin --unshallow 7eb69ee9d7227242fc36f6f5e16cdfa39d4d3e6e: afb6294ed13d01a63e3fb921a79a8386905e0e23:
+DEBUG: ran git fetch --unshallow origin 7eb69ee9d7227242fc36f6f5e16cdfa39d4d3e6e: afb6294ed13d01a63e3fb921a79a8386905e0e23: in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git branch
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git checkout master
+DEBUG: ran git checkout master in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git reset --hard afb6294ed13d01a63e3fb921a79a8386905e0e23
+DEBUG: ran git reset --hard afb6294ed13d01a63e3fb921a79a8386905e0e23 in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git clean -fd .
+DEBUG: ran clean --force -d . in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git merge 7eb69ee9d7227242fc36f6f5e16cdfa39d4d3e6e
+DEBUG: ran git merge 7eb69ee9d7227242fc36f6f5e16cdfa39d4d3e6e in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git log --format=%H%x1f%an%x1f%ae%x1f%cn%x1f%ce%x1f%s%n%b%x1e afb6294ed13d01a63e3fb921a79a8386905e0e23..HEAD
+Merged SHA 7eb69ee9d7227242fc36f6f5e16cdfa39d4d3e6e with commit message 'chore: Promote nodey434 to version 0.0.1' into base branch master
+
+Showing logs for build [32mjstrachan-environment-bucketrep-xbw7d-1[0m stage [32mpr-checks[0m and container [32mstep-create-helmfile[0m
+Cloning the Jenkins X versions repo https://github.com/jenkins-x-labs/jenkins-x-versions.git with ref refs/heads/master to /builder/home/.**/jenkins-x-versions
+
+Showing logs for build [32mjstrachan-environment-bucketrep-xbw7d-1[0m stage [32mpr-checks[0m and container [32mstep-lint-helmfile-system[0m
+Adding repo dev http://bucketrepo/bucketrepo/charts/
+"dev" has been added to your repositories
+
+Adding repo jenkins-x https://storage.googleapis.com/chartmuseum.jenkins-x.io
+"jenkins-x" has been added to your repositories
+
+Adding repo zloeber git+https://github.com/rawlingsj/helm-namespace@chart
+"zloeber" has been added to your repositories
+
+Updating repo
+Hang tight while we grab the latest from your chart repositories...
+...Successfully got an update from the "dev" chart repository
+...Successfully got an update from the "zloeber" chart repository
+...Successfully got an update from the "jenkins-x" chart repository
+Update Complete. ⎈ Happy Helming!⎈ 
+
+Fetching jenkins-x/empty
+Fetching zloeber/namespace
+Linting release=empty, chart=/tmp/143204855/empty/latest/jenkins-x/empty/empty
+==> Linting /tmp/143204855/empty/latest/jenkins-x/empty/empty
+
+1 chart(s) linted, 0 chart(s) failed
+
+Linting release=namespace-**-staging, chart=/tmp/143204855/namespace-**-staging/latest/zloeber/namespace/namespace
+==> Linting /tmp/143204855/namespace-**-staging/latest/zloeber/namespace/namespace
+[INFO] Chart.yaml: icon is recommended
+
+1 chart(s) linted, 0 chart(s) failed
+
+
+Showing logs for build [32mjstrachan-environment-bucketrep-xbw7d-1[0m stage [32mpr-checks[0m and container [32mstep-lint-helmfile-apps[0m
+Adding repo dev http://bucketrepo/bucketrepo/charts/
+"dev" has been added to your repositories
+
+Adding repo jenkins-x http://chartmuseum.jenkins-x.io
+"jenkins-x" has been added to your repositories
+
+Adding repo zloeber git+https://github.com/rawlingsj/helm-namespace@chart
+"zloeber" has been added to your repositories
+
+Updating repo
+Hang tight while we grab the latest from your chart repositories...
+...Successfully got an update from the "dev" chart repository
+...Successfully got an update from the "zloeber" chart repository
+...Successfully got an update from the "jenkins-x" chart repository
+Update Complete. ⎈ Happy Helming!⎈ 
+
+Fetching dev/nodey434
+Fetching zloeber/namespace
+Linting release=nodey434, chart=/tmp/667593610/nodey434/0.0.1/dev/nodey434/nodey434
+==> Linting /tmp/667593610/nodey434/0.0.1/dev/nodey434/nodey434
+
+1 chart(s) linted, 0 chart(s) failed
+
+Linting release=namespace-**-staging, chart=/tmp/667593610/namespace-**-staging/latest/zloeber/namespace/namespace
+==> Linting /tmp/667593610/namespace-**-staging/latest/zloeber/namespace/namespace
+[INFO] Chart.yaml: icon is recommended
+
+1 chart(s) linted, 0 chart(s) failed
+
