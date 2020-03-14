@@ -1,6 +1,6 @@
 apps:
 - name: dev/nodey434
-  version: 0.0.1
+  version: 0.0.2
 repositories:
 - name: dev
   url: http://bucketrepo/bucketrepo/charts/
