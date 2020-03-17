@@ -1,0 +1,3 @@
+canary:
+  enabled: true
+  host: nodey434-staging.34.77.80.35.nip.io
