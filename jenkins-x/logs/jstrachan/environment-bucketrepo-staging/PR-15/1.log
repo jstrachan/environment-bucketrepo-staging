@@ -1,19 +1,19 @@
 
-Showing logs for build [32mjstrachan-environment-bucketrep-2gs5d-1[0m stage [32mpr-checks[0m and container [32mstep-credential-initializer-n9k8x[0m
-{"level":"warn","ts":1584473774.486327,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1584473774.4867816,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Showing logs for build [32mjstrachan-environment-bucketrep-swwqq-1[0m stage [32mpr-checks[0m and container [32mstep-credential-initializer-jrwmx[0m
+{"level":"warn","ts":1584473779.8724577,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1584473779.8731866,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
 
-Showing logs for build [32mjstrachan-environment-bucketrep-2gs5d-1[0m stage [32mpr-checks[0m and container [32mstep-working-dir-initializer-4kv4m[0m
-{"level":"warn","ts":1584473775.0355487,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
-{"level":"info","ts":1584473775.036575,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+Showing logs for build [32mjstrachan-environment-bucketrep-swwqq-1[0m stage [32mpr-checks[0m and container [32mstep-working-dir-initializer-n8d8h[0m
+{"level":"warn","ts":1584473780.9266305,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1584473780.9283419,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
 
-Showing logs for build [32mjstrachan-environment-bucketrep-2gs5d-1[0m stage [32mpr-checks[0m and container [32mstep-place-tools[0m
+Showing logs for build [32mjstrachan-environment-bucketrep-swwqq-1[0m stage [32mpr-checks[0m and container [32mstep-place-tools[0m
 
-Showing logs for build [32mjstrachan-environment-bucketrep-2gs5d-1[0m stage [32mpr-checks[0m and container [32mstep-git-source-jstrachan-environment-bucketrep-2gs5d-2wtcv[0m
-{"level":"warn","ts":1584473781.1457465,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1584473782.1819134,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*********/environment-bucketrepo-staging.git @ master in path /workspace/source"}
+Showing logs for build [32mjstrachan-environment-bucketrep-swwqq-1[0m stage [32mpr-checks[0m and container [32mstep-git-source-jstrachan-environment-bucketrep-swwqq-q9vrk[0m
+{"level":"warn","ts":1584473786.1120574,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1584473787.1848059,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*********/environment-bucketrepo-staging.git @ master in path /workspace/source"}
 
-Showing logs for build [32mjstrachan-environment-bucketrep-2gs5d-1[0m stage [32mpr-checks[0m and container [32mstep-git-merge[0m
+Showing logs for build [32mjstrachan-environment-bucketrep-swwqq-1[0m stage [32mpr-checks[0m and container [32mstep-git-merge[0m
 Using SHAs from PULL_REFS=master:de371f77fcb052591252bedaeebec15db8418900,15:f64fbeae386d0ce4f921d453b5ce53baf03eaeb3
 DEBUG: LC_ALL=C JX_LOG_LEVEL=error git fetch origin --unshallow f64fbeae386d0ce4f921d453b5ce53baf03eaeb3: de371f77fcb052591252bedaeebec15db8418900:
 DEBUG: ran git fetch --unshallow origin f64fbeae386d0ce4f921d453b5ce53baf03eaeb3: de371f77fcb052591252bedaeebec15db8418900: in 
@@ -29,9 +29,9 @@ DEBUG: ran git merge f64fbeae386d0ce4f921d453b5ce53baf03eaeb3 in
 DEBUG: LC_ALL=C JX_LOG_LEVEL=error git log --format=%H%x1f%an%x1f%ae%x1f%cn%x1f%ce%x1f%s%n%b%x1e de371f77fcb052591252bedaeebec15db8418900..HEAD
 Merged SHA f64fbeae386d0ce4f921d453b5ce53baf03eaeb3 with commit message 'chore: Promote nodey434 to version 0.0.5' into base branch master
 
-Showing logs for build [32mjstrachan-environment-bucketrep-2gs5d-1[0m stage [32mpr-checks[0m and container [32mstep-create-helmfile[0m
+Showing logs for build [32mjstrachan-environment-bucketrep-swwqq-1[0m stage [32mpr-checks[0m and container [32mstep-create-helmfile[0m
 
-Showing logs for build [32mjstrachan-environment-bucketrep-2gs5d-1[0m stage [32mpr-checks[0m and container [32mstep-lint-helmfile-system[0m
+Showing logs for build [32mjstrachan-environment-bucketrep-swwqq-1[0m stage [32mpr-checks[0m and container [32mstep-lint-helmfile-system[0m
 Adding repo dev http://bucketrepo/bucketrepo/charts/
 "dev" has been added to your repositories
 
@@ -45,13 +45,13 @@ Hang tight while we grab the latest from your chart repositories...
 Update Complete. ⎈ Happy Helming!⎈ 
 
 Fetching jenkins-x/empty
-Linting release=empty, chart=/tmp/349608452/empty/latest/jenkins-x/empty/empty
-==> Linting /tmp/349608452/empty/latest/jenkins-x/empty/empty
+Linting release=empty, chart=/tmp/580584572/empty/latest/jenkins-x/empty/empty
+==> Linting /tmp/580584572/empty/latest/jenkins-x/empty/empty
 
 1 chart(s) linted, 0 chart(s) failed
 
 
-Showing logs for build [32mjstrachan-environment-bucketrep-2gs5d-1[0m stage [32mpr-checks[0m and container [32mstep-lint-helmfile-apps[0m
+Showing logs for build [32mjstrachan-environment-bucketrep-swwqq-1[0m stage [32mpr-checks[0m and container [32mstep-lint-helmfile-apps[0m
 Adding repo dev http://bucketrepo/bucketrepo/charts/
 "dev" has been added to your repositories
 
@@ -65,8 +65,8 @@ Hang tight while we grab the latest from your chart repositories...
 Update Complete. ⎈ Happy Helming!⎈ 
 
 Fetching dev/nodey434
-Linting release=nodey434, chart=/tmp/333257933/nodey434/0.0.5/dev/nodey434/nodey434
-==> Linting /tmp/333257933/nodey434/0.0.5/dev/nodey434/nodey434
-
-1 chart(s) linted, 0 chart(s) failed
-
+in ./helmfile.yaml: 2 errors:
+err 0: helm exited with status 1:
+  Error: chart "nodey434" matching 0.0.5 not found in dev index. (try 'helm repo update'): no chart version found for nodey434-0.0.5
+[31m
+Pipeline failed on stage 'pr-checks' : container 'step-lint-helmfile-apps'. The execution of the pipeline has stopped.[0m
