@@ -1,39 +1,43 @@
 
-Showing logs for build [32mjstrachan-environment-bucketrep-skqjt-3[0m stage [32mrelease[0m and container [32mstep-credential-initializer-6txnj[0m
-{"level":"warn","ts":1584473682.4376843,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1584473682.4382894,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Showing logs for build [32mjstrachan-environment-bucketrep-jsmlc-3[0m stage [32mrelease[0m and container [32mstep-credential-initializer-m5p9f[0m
+{"level":"warn","ts":1584474486.162357,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1584474486.163145,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
 
-Showing logs for build [32mjstrachan-environment-bucketrep-skqjt-3[0m stage [32mrelease[0m and container [32mstep-working-dir-initializer-vrdz5[0m
-{"level":"warn","ts":1584473683.3300235,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
-{"level":"info","ts":1584473683.3312428,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+Showing logs for build [32mjstrachan-environment-bucketrep-jsmlc-3[0m stage [32mrelease[0m and container [32mstep-working-dir-initializer-74zcs[0m
+{"level":"warn","ts":1584474487.4833155,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1584474487.4850717,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
 
-Showing logs for build [32mjstrachan-environment-bucketrep-skqjt-3[0m stage [32mrelease[0m and container [32mstep-place-tools[0m
+Showing logs for build [32mjstrachan-environment-bucketrep-jsmlc-3[0m stage [32mrelease[0m and container [32mstep-place-tools[0m
 
-Showing logs for build [32mjstrachan-environment-bucketrep-skqjt-3[0m stage [32mrelease[0m and container [32mstep-git-source-jstrachan-environment-bucketrep-skqjt-xqn8c[0m
-{"level":"warn","ts":1584473691.5046628,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1584473692.5527477,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*********/environment-bucketrepo-staging.git @ v0.0.12 in path /workspace/source"}
+Showing logs for build [32mjstrachan-environment-bucketrep-jsmlc-3[0m stage [32mrelease[0m and container [32mstep-git-source-jstrachan-environment-bucketrep-jsmlc-mljj7[0m
+{"level":"warn","ts":1584474494.5803485,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1584474495.5951478,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*********/environment-bucketrepo-staging.git @ v0.0.15 in path /workspace/source"}
 
-Showing logs for build [32mjstrachan-environment-bucketrep-skqjt-3[0m stage [32mrelease[0m and container [32mstep-git-merge[0m
-Using SHAs from PULL_REFS=master:de371f77fcb052591252bedaeebec15db8418900
+Showing logs for build [32mjstrachan-environment-bucketrep-jsmlc-3[0m stage [32mrelease[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:9ee98235d466847b1e766024f4903969a5c7aab6
 WARNING: no SHAs to merge, falling back to initial cloned commit
 
-Showing logs for build [32mjstrachan-environment-bucketrep-skqjt-3[0m stage [32mrelease[0m and container [32mstep-validate-git[0m
+Showing logs for build [32mjstrachan-environment-bucketrep-jsmlc-3[0m stage [32mrelease[0m and container [32mstep-validate-git[0m
 Git configured for user: jenkins-x-bot and email jenkins-x@googlegroups.com
 
-Showing logs for build [32mjstrachan-environment-bucketrep-skqjt-3[0m stage [32mrelease[0m and container [32mstep-verify-preinstall[0m
+Showing logs for build [32mjstrachan-environment-bucketrep-jsmlc-3[0m stage [32mrelease[0m and container [32mstep-verify-preinstall[0m
 disabling ** step verify preinstall as using a local environment
 
-Showing logs for build [32mjstrachan-environment-bucketrep-skqjt-3[0m stage [32mrelease[0m and container [32mstep-install-jx-crds[0m
+Showing logs for build [32mjstrachan-environment-bucketrep-jsmlc-3[0m stage [32mrelease[0m and container [32mstep-install-jx-crds[0m
 Jenkins X CRDs upgraded with success
 
-Showing logs for build [32mjstrachan-environment-bucketrep-skqjt-3[0m stage [32mrelease[0m and container [32mstep-generate-helmfile[0m
+Showing logs for build [32mjstrachan-environment-bucketrep-jsmlc-3[0m stage [32mrelease[0m and container [32mstep-generate-helmfile[0m
 
-Showing logs for build [32mjstrachan-environment-bucketrep-skqjt-3[0m stage [32mrelease[0m and container [32mstep-helmfile-system[0m
+Showing logs for build [32mjstrachan-environment-bucketrep-jsmlc-3[0m stage [32mrelease[0m and container [32mstep-helmfile-system[0m
+Adding repo dev http://bucketrepo/bucketrepo/charts/
+"dev" has been added to your repositories
+
 Adding repo jenkins-x https://storage.googleapis.com/chartmuseum.jenkins-x.io
 "jenkins-x" has been added to your repositories
 
 Updating repo
 Hang tight while we grab the latest from your chart repositories...
+...Successfully got an update from the "dev" chart repository
 ...Successfully got an update from the "jenkins-x" chart repository
 Update Complete. ⎈ Happy Helming!⎈ 
 
@@ -43,49 +47,14 @@ Affected releases are:
 Upgrading release=empty, chart=jenkins-x/empty
 Release "empty" has been upgraded. Happy Helming!
 NAME: empty
-LAST DEPLOYED: Tue Mar 17 19:35:16 2020
-NAMESPACE: **-staging
-STATUS: deployed
-REVISION: 3
-TEST SUITE: None
-
-Listing releases matching ^empty$
-empty	**-staging	3       	2020-03-17 19:35:16.560368011 +0000 UTC	deployed	empty-0.0.3	           
-
-
-UPDATED RELEASES:
-NAME    CHART             VERSION
-empty   jenkins-x/empty     0.0.3
-
-
-Showing logs for build [32mjstrachan-environment-bucketrep-skqjt-3[0m stage [32mrelease[0m and container [32mstep-verify-ingress[0m
-Waiting to find the external host name of the ingress controller Service in namespace nginx with name nginx-ingress-controller
-No domain flag provided so using default 34.76.61.93.nip.io to generate Ingress rules
-defaulting the domain to 34.76.61.93.nip.io and modified /workspace/source/**-requirements.yml
-
-Showing logs for build [32mjstrachan-environment-bucketrep-skqjt-3[0m stage [32mrelease[0m and container [32mstep-helmfile-apps[0m
-Adding repo jenkins-x https://storage.googleapis.com/chartmuseum.jenkins-x.io
-"jenkins-x" has been added to your repositories
-
-Updating repo
-Hang tight while we grab the latest from your chart repositories...
-...Successfully got an update from the "jenkins-x" chart repository
-Update Complete. ⎈ Happy Helming!⎈ 
-
-Affected releases are:
-  empty (jenkins-x/empty) UPDATED
-
-Upgrading release=empty, chart=jenkins-x/empty
-Release "empty" has been upgraded. Happy Helming!
-NAME: empty
-LAST DEPLOYED: Tue Mar 17 19:35:26 2020
+LAST DEPLOYED: Tue Mar 17 19:48:38 2020
 NAMESPACE: **-staging
 STATUS: deployed
 REVISION: 4
 TEST SUITE: None
 
 Listing releases matching ^empty$
-empty	**-staging	4       	2020-03-17 19:35:26.121287712 +0000 UTC	deployed	empty-0.0.3	           
+empty	**-staging	4       	2020-03-17 19:48:38.391727799 +0000 UTC	deployed	empty-0.0.3	           
 
 
 UPDATED RELEASES:
@@ -93,60 +62,100 @@ NAME    CHART             VERSION
 empty   jenkins-x/empty     0.0.3
 
 
-Showing logs for build [32mjstrachan-environment-bucketrep-skqjt-3[0m stage [32mrelease[0m and container [32mstep-git-creds[0m
+Showing logs for build [32mjstrachan-environment-bucketrep-jsmlc-3[0m stage [32mrelease[0m and container [32mstep-verify-ingress[0m
+Waiting to find the external host name of the ingress controller Service in namespace nginx with name nginx-ingress-controller
+No domain flag provided so using default 34.76.118.232.nip.io to generate Ingress rules
+defaulting the domain to 34.76.118.232.nip.io and modified /workspace/source/**-requirements.yml
+
+Showing logs for build [32mjstrachan-environment-bucketrep-jsmlc-3[0m stage [32mrelease[0m and container [32mstep-helmfile-apps[0m
+Adding repo dev http://bucketrepo/bucketrepo/charts/
+"dev" has been added to your repositories
+
+Adding repo jenkins-x http://chartmuseum.jenkins-x.io
+"jenkins-x" has been added to your repositories
+
+Updating repo
+Hang tight while we grab the latest from your chart repositories...
+...Successfully got an update from the "dev" chart repository
+...Successfully got an update from the "jenkins-x" chart repository
+Update Complete. ⎈ Happy Helming!⎈ 
+
+Affected releases are:
+  nodey434 (dev/nodey434) UPDATED
+
+Upgrading release=nodey434, chart=dev/nodey434
+Release "nodey434" has been upgraded. Happy Helming!
+NAME: nodey434
+LAST DEPLOYED: Tue Mar 17 19:48:45 2020
+NAMESPACE: **-staging
+STATUS: deployed
+REVISION: 2
+TEST SUITE: None
+NOTES:
+Get the application URL by running these commands:
+
+kubectl get ingress nodey434-nodey434
+
+Listing releases matching ^nodey434$
+nodey434	**-staging	2       	2020-03-17 19:48:45.740620177 +0000 UTC	deployed	nodey434-0.0.5	0.0.5      
+
+
+UPDATED RELEASES:
+NAME       CHART          VERSION
+nodey434   dev/nodey434     0.0.5
+
+
+Showing logs for build [32mjstrachan-environment-bucketrep-jsmlc-3[0m stage [32mrelease[0m and container [32mstep-git-creds[0m
 Generated Git credentials file /builder/home/git/credentials
 
-Showing logs for build [32mjstrachan-environment-bucketrep-skqjt-3[0m stage [32mrelease[0m and container [32mstep-verify-jenkins-x-environment[0m
+Showing logs for build [32mjstrachan-environment-bucketrep-jsmlc-3[0m stage [32mrelease[0m and container [32mstep-verify-jenkins-x-environment[0m
 disabling ** step verify env as using a local environment
 
-Showing logs for build [32mjstrachan-environment-bucketrep-skqjt-3[0m stage [32mrelease[0m and container [32mstep-install-pipelines[0m
+Showing logs for build [32mjstrachan-environment-bucketrep-jsmlc-3[0m stage [32mrelease[0m and container [32mstep-install-pipelines[0m
 
-Showing logs for build [32mjstrachan-environment-bucketrep-skqjt-3[0m stage [32mrelease[0m and container [32mstep-update-webhooks[0m
+Showing logs for build [32mjstrachan-environment-bucketrep-jsmlc-3[0m stage [32mrelease[0m and container [32mstep-update-webhooks[0m
 DEBUG: Finding service url for hook in namespace **
 DEBUG: Couldn't find service url, attempting to look up via ingress
-DEBUG: found service url http://hook-**.34.76.61.93.nip.io
+DEBUG: found service url http://hook-**.34.76.118.232.nip.io
 Updating webhooks for Owner: ********* and Repository: environment-bucketrepo-dev in git server: https://github.com
 Checking hooks for repository *********/environment-bucketrepo-dev with user *********
-Found matching hook for url http://hook-**.34.76.61.93.nip.io/hook
-Updating GitHub webhook for *********/environment-bucketrepo-dev for url http://hook-**.34.76.61.93.nip.io/hook
+Found matching hook for url http://hook-**.34.76.118.232.nip.io/hook
+Updating GitHub webhook for *********/environment-bucketrepo-dev for url http://hook-**.34.76.118.232.nip.io/hook
 Updating webhooks for Owner: ********* and Repository: environment-bucketrepo-production in git server: https://github.com
 Checking hooks for repository *********/environment-bucketrepo-production with user *********
-Found matching hook for url http://hook-**.34.76.61.93.nip.io/hook
-Updating GitHub webhook for *********/environment-bucketrepo-production for url http://hook-**.34.76.61.93.nip.io/hook
+Found matching hook for url http://hook-**.34.76.118.232.nip.io/hook
+Updating GitHub webhook for *********/environment-bucketrepo-production for url http://hook-**.34.76.118.232.nip.io/hook
 Updating webhooks for Owner: ********* and Repository: environment-bucketrepo-staging in git server: https://github.com
 Checking hooks for repository *********/environment-bucketrepo-staging with user *********
-Found matching hook for url http://hook-**.34.76.61.93.nip.io/hook
-Updating GitHub webhook for *********/environment-bucketrepo-staging for url http://hook-**.34.76.61.93.nip.io/hook
+Found matching hook for url http://hook-**.34.76.118.232.nip.io/hook
+Updating GitHub webhook for *********/environment-bucketrepo-staging for url http://hook-**.34.76.118.232.nip.io/hook
 Updating webhooks for Owner: ********* and Repository: nodey431 in git server: https://github.com
 Checking hooks for repository *********/nodey431 with user *********
-Found matching hook for url http://hook-**.34.76.61.93.nip.io/hook
-Updating GitHub webhook for *********/nodey431 for url http://hook-**.34.76.61.93.nip.io/hook
+Found matching hook for url http://hook-**.34.76.118.232.nip.io/hook
+Updating GitHub webhook for *********/nodey431 for url http://hook-**.34.76.118.232.nip.io/hook
 Updating webhooks for Owner: ********* and Repository: nodey433 in git server: https://github.com
 Checking hooks for repository *********/nodey433 with user *********
-Found matching hook for url http://hook-**.34.76.61.93.nip.io/hook
-Updating GitHub webhook for *********/nodey433 for url http://hook-**.34.76.61.93.nip.io/hook
+Found matching hook for url http://hook-**.34.76.118.232.nip.io/hook
+Updating GitHub webhook for *********/nodey433 for url http://hook-**.34.76.118.232.nip.io/hook
 Updating webhooks for Owner: ********* and Repository: nodey434 in git server: https://github.com
 Checking hooks for repository *********/nodey434 with user *********
-Found matching hook for url http://hook-**.34.76.61.93.nip.io/hook
-Updating GitHub webhook for *********/nodey434 for url http://hook-**.34.76.61.93.nip.io/hook
+Found matching hook for url http://hook-**.34.76.118.232.nip.io/hook
+Updating GitHub webhook for *********/nodey434 for url http://hook-**.34.76.118.232.nip.io/hook
 
-Showing logs for build [32mjstrachan-environment-bucketrep-skqjt-3[0m stage [32mrelease[0m and container [32mstep-verify-installation[0m
+Showing logs for build [32mjstrachan-environment-bucketrep-jsmlc-3[0m stage [32mrelease[0m and container [32mstep-verify-installation[0m
 verifying the Jenkins X installation in namespace **
 verifying pods
 Checking pod statuses
 POD                                                        STATUS
-bucketrepo-bucketrepo-6c9567bd96-c5779                     Running
-**boot-helmfile-resources-controllerbuild-7c5cf6b464-6m86t Running
-**boot-helmfile-resources-gcactivities-1584468000-z28mr    Succeeded
-**boot-helmfile-resources-gcactivities-1584469800-l688k    Succeeded
-**boot-helmfile-resources-gcpods-1584468000-vdww6          Succeeded
-**boot-helmfile-resources-gcpods-1584469800-6b9xr          Succeeded
-**boot-helmfile-resources-gcpreviews-1584468000-bbjqq      Succeeded
-**ui-**ui-5c7f45d6bd-4mjw2                                 Running
-lighthouse-lighthouse-c58fd8db-5gnbc                       Running
-lighthouse-lighthouse-c58fd8db-fjjsn                       Running
-tekton-pipelines-controller-666488cbd5-s77k5               Running
-tide-59d8fc445f-77s5k                                      Running
+bucketrepo-bucketrepo-6c9567bd96-xn9qq                     Running
+**-boot-ln9d7                                              Succeeded
+**boot-helmfile-resources-controllerbuild-7c5cf6b464-nd7hf Running
+**boot-helmfile-resources-controllerrole-9cfc86dd9-r8bt9   Running
+**ui-**ui-5c7f45d6bd-s6m77                                 Running
+lighthouse-lighthouse-c58fd8db-pgzxs                       Running
+lighthouse-lighthouse-c58fd8db-xgvx4                       Running
+tekton-pipelines-controller-666488cbd5-vtshd               Running
+tide-59d8fc445f-btvd9                                      Running
 Verifying the git config
 Verifying username ********* at git server github at https://github.com
 Found 21 organisations in git server https://github.com: CamelCookbook, FuseByExample, arcalos-dashboard, arcalos-environments, cb-kubecd, cloudbees, codeship, fabric8-updatebot, fusesource, jenkins-x, jenkins-x-apps, jenkins-x-buildpacks, jenkins-x-charts, jenkins-x-dashboard, jenkins-x-images, jenkins-x-labs, jenkins-x-quickstarts, jenkins-x-test-projects, jenkinsci, jenkinsx, petclinic-gcp
