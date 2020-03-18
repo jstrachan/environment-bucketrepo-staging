@@ -17,6 +17,7 @@ environments:
   ingress:
     domain: ""
     externalDNS: false
+    kind: "istio"
     namespaceSubDomain: ""
     tls:
       email: ""
