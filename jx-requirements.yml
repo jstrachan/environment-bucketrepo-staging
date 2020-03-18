@@ -31,7 +31,7 @@ helmfile: true
 ingress:
   domain: ""
   externalDNS: false
-  kind: "istio"
+  kind: istio
   namespaceSubDomain: -jx-staging.
   tls:
     email: ""
