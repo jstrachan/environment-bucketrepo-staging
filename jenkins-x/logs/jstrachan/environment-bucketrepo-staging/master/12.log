@@ -1,0 +1,173 @@
+
+Showing logs for build [32mjstrachan-environment-bucketrep-6jl2q-12[0m stage [32mrelease[0m and container [32mstep-credential-initializer-wqwgh[0m
+{"level":"warn","ts":1584628787.3246531,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1584628787.3259046,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mjstrachan-environment-bucketrep-6jl2q-12[0m stage [32mrelease[0m and container [32mstep-working-dir-initializer-dg74r[0m
+{"level":"warn","ts":1584628788.2849045,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1584628788.285939,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mjstrachan-environment-bucketrep-6jl2q-12[0m stage [32mrelease[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mjstrachan-environment-bucketrep-6jl2q-12[0m stage [32mrelease[0m and container [32mstep-git-source-jstrachan-environment-bucketrep-6jl2q-2jc72[0m
+{"level":"warn","ts":1584628795.3691838,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1584628796.4621632,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*********/environment-bucketrepo-staging.git @ v0.0.29 in path /workspace/source"}
+
+Showing logs for build [32mjstrachan-environment-bucketrep-6jl2q-12[0m stage [32mrelease[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:24679ae2aa4912bc746a4d152a04fc6ee0992669
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32mjstrachan-environment-bucketrep-6jl2q-12[0m stage [32mrelease[0m and container [32mstep-validate-git[0m
+Git configured for user: jenkins-x-bot and email jenkins-x@googlegroups.com
+
+Showing logs for build [32mjstrachan-environment-bucketrep-6jl2q-12[0m stage [32mrelease[0m and container [32mstep-verify-preinstall[0m
+disabling ** step verify preinstall as using a local environment
+
+Showing logs for build [32mjstrachan-environment-bucketrep-6jl2q-12[0m stage [32mrelease[0m and container [32mstep-install-jx-crds[0m
+Jenkins X CRDs upgraded with success
+
+Showing logs for build [32mjstrachan-environment-bucketrep-6jl2q-12[0m stage [32mrelease[0m and container [32mstep-generate-helmfile[0m
+
+Showing logs for build [32mjstrachan-environment-bucketrep-6jl2q-12[0m stage [32mrelease[0m and container [32mstep-helmfile-system[0m
+Adding repo dev http://bucketrepo/bucketrepo/charts/
+"dev" has been added to your repositories
+
+Adding repo jenkins-x https://storage.googleapis.com/chartmuseum.jenkins-x.io
+"jenkins-x" has been added to your repositories
+
+Updating repo
+Hang tight while we grab the latest from your chart repositories...
+...Successfully got an update from the "dev" chart repository
+...Successfully got an update from the "jenkins-x" chart repository
+Update Complete. ⎈ Happy Helming!⎈ 
+
+Affected releases are:
+  empty (jenkins-x/empty) UPDATED
+
+Upgrading release=empty, chart=jenkins-x/empty
+Release "empty" has been upgraded. Happy Helming!
+NAME: empty
+LAST DEPLOYED: Thu Mar 19 14:40:19 2020
+NAMESPACE: **-staging
+STATUS: deployed
+REVISION: 5
+TEST SUITE: None
+
+Listing releases matching ^empty$
+empty	**-staging	5       	2020-03-19 14:40:19.03593925 +0000 UTC	deployed	empty-0.0.3	           
+
+
+UPDATED RELEASES:
+NAME    CHART             VERSION
+empty   jenkins-x/empty     0.0.3
+
+
+Showing logs for build [32mjstrachan-environment-bucketrep-6jl2q-12[0m stage [32mrelease[0m and container [32mstep-verify-ingress[0m
+Waiting to find the external host name of the ingress controller Service in namespace istio-system with name istio-ingressgateway
+No domain flag provided so using default 34.76.61.93.nip.io to generate Ingress rules
+defaulting the domain to 34.76.61.93.nip.io and modified /workspace/source/**-requirements.yml
+
+Showing logs for build [32mjstrachan-environment-bucketrep-6jl2q-12[0m stage [32mrelease[0m and container [32mstep-helmfile-apps[0m
+Adding repo dev http://bucketrepo/bucketrepo/charts/
+"dev" has been added to your repositories
+
+Adding repo jenkins-x http://chartmuseum.jenkins-x.io
+"jenkins-x" has been added to your repositories
+
+Updating repo
+Hang tight while we grab the latest from your chart repositories...
+...Successfully got an update from the "dev" chart repository
+...Successfully got an update from the "jenkins-x" chart repository
+Update Complete. ⎈ Happy Helming!⎈ 
+
+Affected releases are:
+  godemo30 (dev/godemo30) UPDATED
+
+Upgrading release=godemo30, chart=dev/godemo30
+Release "godemo30" has been upgraded. Happy Helming!
+NAME: godemo30
+LAST DEPLOYED: Thu Mar 19 14:40:26 2020
+NAMESPACE: **-staging
+STATUS: deployed
+REVISION: 5
+TEST SUITE: None
+NOTES:
+Get the application URL by running these commands:
+
+kubectl get ingress godemo30-godemo30
+
+Listing releases matching ^godemo30$
+godemo30	**-staging	5       	2020-03-19 14:40:26.523944514 +0000 UTC	deployed	godemo30-0.0.8	0.0.8      
+
+
+UPDATED RELEASES:
+NAME       CHART          VERSION
+godemo30   dev/godemo30     0.0.8
+
+
+Showing logs for build [32mjstrachan-environment-bucketrep-6jl2q-12[0m stage [32mrelease[0m and container [32mstep-git-creds[0m
+Generated Git credentials file /builder/home/git/credentials
+
+Showing logs for build [32mjstrachan-environment-bucketrep-6jl2q-12[0m stage [32mrelease[0m and container [32mstep-verify-jenkins-x-environment[0m
+disabling ** step verify env as using a local environment
+
+Showing logs for build [32mjstrachan-environment-bucketrep-6jl2q-12[0m stage [32mrelease[0m and container [32mstep-install-pipelines[0m
+
+Showing logs for build [32mjstrachan-environment-bucketrep-6jl2q-12[0m stage [32mrelease[0m and container [32mstep-update-webhooks[0m
+DEBUG: Finding service url for hook in namespace **
+DEBUG: Couldn't find service url, attempting to look up via ingress
+DEBUG: Unable to find service url via ingress for hook in namespace **
+Updating webhooks for Owner: ********* and Repository: environment-bucketrepo-dev in git server: https://github.com
+Checking hooks for repository *********/environment-bucketrepo-dev with user *********
+Creating GitHub webhook for *********/environment-bucketrepo-dev for url /hook
+WARNING: failed to update webhooks for Owner: ********* and Repository: environment-bucketrepo-dev in git server: https://github.com: creating the webhook "/hook" on repository '*********/environment-bucketrepo-dev': POST https://api.github.com/repos/*********/environment-bucketrepo-dev/hooks: 422 Validation Failed [{Resource:Hook Field: Code:custom Message:Config URL is missing a scheme}]
+Updating webhooks for Owner: ********* and Repository: environment-bucketrepo-production in git server: https://github.com
+Checking hooks for repository *********/environment-bucketrepo-production with user *********
+Creating GitHub webhook for *********/environment-bucketrepo-production for url /hook
+WARNING: failed to update webhooks for Owner: ********* and Repository: environment-bucketrepo-production in git server: https://github.com: creating the webhook "/hook" on repository '*********/environment-bucketrepo-production': POST https://api.github.com/repos/*********/environment-bucketrepo-production/hooks: 422 Validation Failed [{Resource:Hook Field: Code:custom Message:Config URL is missing a scheme}]
+Updating webhooks for Owner: ********* and Repository: environment-bucketrepo-staging in git server: https://github.com
+Checking hooks for repository *********/environment-bucketrepo-staging with user *********
+Creating GitHub webhook for *********/environment-bucketrepo-staging for url /hook
+WARNING: failed to update webhooks for Owner: ********* and Repository: environment-bucketrepo-staging in git server: https://github.com: creating the webhook "/hook" on repository '*********/environment-bucketrepo-staging': POST https://api.github.com/repos/*********/environment-bucketrepo-staging/hooks: 422 Validation Failed [{Resource:Hook Field: Code:custom Message:Config URL is missing a scheme}]
+Updating webhooks for Owner: ********* and Repository: godemo30 in git server: https://github.com
+Checking hooks for repository *********/godemo30 with user *********
+Creating GitHub webhook for *********/godemo30 for url /hook
+WARNING: failed to update webhooks for Owner: ********* and Repository: godemo30 in git server: https://github.com: creating the webhook "/hook" on repository '*********/godemo30': POST https://api.github.com/repos/*********/godemo30/hooks: 422 Validation Failed [{Resource:Hook Field: Code:custom Message:Config URL is missing a scheme}]
+Updating webhooks for Owner: ********* and Repository: nodey431 in git server: https://github.com
+Checking hooks for repository *********/nodey431 with user *********
+Creating GitHub webhook for *********/nodey431 for url /hook
+WARNING: failed to update webhooks for Owner: ********* and Repository: nodey431 in git server: https://github.com: creating the webhook "/hook" on repository '*********/nodey431': POST https://api.github.com/repos/*********/nodey431/hooks: 422 Validation Failed [{Resource:Hook Field: Code:custom Message:Config URL is missing a scheme}]
+Updating webhooks for Owner: ********* and Repository: nodey433 in git server: https://github.com
+Checking hooks for repository *********/nodey433 with user *********
+Creating GitHub webhook for *********/nodey433 for url /hook
+WARNING: failed to update webhooks for Owner: ********* and Repository: nodey433 in git server: https://github.com: creating the webhook "/hook" on repository '*********/nodey433': POST https://api.github.com/repos/*********/nodey433/hooks: 422 Validation Failed [{Resource:Hook Field: Code:custom Message:Config URL is missing a scheme}]
+Updating webhooks for Owner: ********* and Repository: nodey434 in git server: https://github.com
+Checking hooks for repository *********/nodey434 with user *********
+Creating GitHub webhook for *********/nodey434 for url /hook
+WARNING: failed to update webhooks for Owner: ********* and Repository: nodey434 in git server: https://github.com: creating the webhook "/hook" on repository '*********/nodey434': POST https://api.github.com/repos/*********/nodey434/hooks: 422 Validation Failed [{Resource:Hook Field: Code:custom Message:Config URL is missing a scheme}]
+
+Showing logs for build [32mjstrachan-environment-bucketrep-6jl2q-12[0m stage [32mrelease[0m and container [32mstep-verify-installation[0m
+verifying the Jenkins X installation in namespace **
+verifying pods
+Checking pod statuses
+POD                                                        STATUS
+bucketrepo-bucketrepo-6c9567bd96-f8v4q                     Running
+**-boot-q9m65                                              Succeeded
+**boot-helmfile-resources-controllerbuild-7fd45857c5-2pxkc Running
+**boot-helmfile-resources-controllerrole-7cbc5bcc6-7mhgh   Running
+**boot-helmfile-resources-gcactivities-1584619200-c88k6    Succeeded
+**boot-helmfile-resources-gcactivities-1584621000-6bpx4    Succeeded
+**boot-helmfile-resources-gcpods-1584619200-c6c7w          Succeeded
+**boot-helmfile-resources-gcpods-1584621000-6qb8c          Succeeded
+**boot-helmfile-resources-gcpreviews-1584619200-hnkhh      Succeeded
+**ui-**ui-7677b6dcc9-7ntv8                                 Running
+lighthouse-lighthouse-7b9dc8c469-4prbm                     Running
+lighthouse-lighthouse-7b9dc8c469-cbqx5                     Running
+tekton-pipelines-controller-666488cbd5-fh87c               Running
+tide-59d8fc445f-q58vn                                      Running
+Verifying the git config
+Verifying username ********* at git server github at https://github.com
+Found 21 organisations in git server https://github.com: CamelCookbook, FuseByExample, arcalos-dashboard, arcalos-environments, cb-kubecd, cloudbees, codeship, fabric8-updatebot, fusesource, jenkins-x, jenkins-x-apps, jenkins-x-buildpacks, jenkins-x-charts, jenkins-x-dashboard, jenkins-x-images, jenkins-x-labs, jenkins-x-quickstarts, jenkins-x-test-projects, jenkinsci, jenkinsx, petclinic-gcp
+Validated pipeline user ********* on git server https://github.com
+Git tokens seem to be setup correctly
+Installation is currently looking: GOOD
