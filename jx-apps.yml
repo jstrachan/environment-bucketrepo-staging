@@ -1,6 +1,6 @@
 apps:
 - name: dev/godemo30
-  version: 0.0.3
+  version: 0.0.5
 repositories:
 - name: dev
   url: http://bucketrepo/bucketrepo/charts/
