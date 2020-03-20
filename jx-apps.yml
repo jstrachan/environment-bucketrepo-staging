@@ -1,6 +1,1 @@
-apps:
-- name: dev/godemo30
-  version: 0.0.9
-repositories:
-- name: dev
-  url: http://bucketrepo/bucketrepo/charts/
+defaultNamespace: ""
