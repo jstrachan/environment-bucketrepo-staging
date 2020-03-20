@@ -1,0 +1,89 @@
+
+Showing logs for build [32mjstrachan-environment-bucketrep-wh4gs-1[0m stage [32mpr-checks[0m and container [32mstep-credential-initializer-8st5t[0m
+{"level":"warn","ts":1584702916.4950492,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1584702916.495577,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mjstrachan-environment-bucketrep-wh4gs-1[0m stage [32mpr-checks[0m and container [32mstep-working-dir-initializer-khhfz[0m
+{"level":"warn","ts":1584702917.5103068,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1584702917.511928,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mjstrachan-environment-bucketrep-wh4gs-1[0m stage [32mpr-checks[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mjstrachan-environment-bucketrep-wh4gs-1[0m stage [32mpr-checks[0m and container [32mstep-git-source-jstrachan-environment-bucketrep-wh4gs-mpmh9[0m
+{"level":"warn","ts":1584702923.7854617,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1584702924.879969,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*********/environment-bucketrepo-staging.git @ master in path /workspace/source"}
+
+Showing logs for build [32mjstrachan-environment-bucketrep-wh4gs-1[0m stage [32mpr-checks[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:5f4a78bccfc13eb842ee99f9d529bf42aeb2a95d,27:23cffc35e84545960927241b713f1aa35f53563a
+DEBUG: JX_LOG_LEVEL=error LC_ALL=C git fetch origin --unshallow 23cffc35e84545960927241b713f1aa35f53563a: 5f4a78bccfc13eb842ee99f9d529bf42aeb2a95d:
+DEBUG: ran git fetch --unshallow origin 23cffc35e84545960927241b713f1aa35f53563a: 5f4a78bccfc13eb842ee99f9d529bf42aeb2a95d: in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git branch
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git checkout master
+DEBUG: ran git checkout master in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git reset --hard 5f4a78bccfc13eb842ee99f9d529bf42aeb2a95d
+DEBUG: ran git reset --hard 5f4a78bccfc13eb842ee99f9d529bf42aeb2a95d in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git clean -fd .
+DEBUG: ran clean --force -d . in 
+DEBUG: JX_LOG_LEVEL=error LC_ALL=C git merge 23cffc35e84545960927241b713f1aa35f53563a
+DEBUG: ran git merge 23cffc35e84545960927241b713f1aa35f53563a in 
+DEBUG: JX_LOG_LEVEL=error LC_ALL=C git log --format=%H%x1f%an%x1f%ae%x1f%cn%x1f%ce%x1f%s%n%b%x1e 5f4a78bccfc13eb842ee99f9d529bf42aeb2a95d..HEAD
+Merged SHA 23cffc35e84545960927241b713f1aa35f53563a with commit message 'chore: Promote godemo37 to version 0.0.1' into base branch master
+
+Showing logs for build [32mjstrachan-environment-bucketrep-wh4gs-1[0m stage [32mpr-checks[0m and container [32mstep-create-helmfile[0m
+
+Showing logs for build [32mjstrachan-environment-bucketrep-wh4gs-1[0m stage [32mpr-checks[0m and container [32mstep-lint-helmfile-system[0m
+Adding repo dev http://bucketrepo/bucketrepo/charts/
+"dev" has been added to your repositories
+
+Adding repo jenkins-x https://storage.googleapis.com/chartmuseum.jenkins-x.io
+"jenkins-x" has been added to your repositories
+
+Adding repo zloeber git+https://github.com/rawlingsj/helm-namespace@chart
+"zloeber" has been added to your repositories
+
+Updating repo
+Hang tight while we grab the latest from your chart repositories...
+...Successfully got an update from the "dev" chart repository
+...Successfully got an update from the "zloeber" chart repository
+...Successfully got an update from the "jenkins-x" chart repository
+Update Complete. ⎈ Happy Helming!⎈ 
+
+Fetching zloeber/namespace
+Fetching jenkins-x/empty
+Linting release=namespace-**-staging, chart=/tmp/183300107/namespace-**-staging/latest/zloeber/namespace/namespace
+==> Linting /tmp/183300107/namespace-**-staging/latest/zloeber/namespace/namespace
+[INFO] Chart.yaml: icon is recommended
+
+1 chart(s) linted, 0 chart(s) failed
+
+Linting release=empty, chart=/tmp/183300107/empty/latest/jenkins-x/empty/empty
+==> Linting /tmp/183300107/empty/latest/jenkins-x/empty/empty
+
+1 chart(s) linted, 0 chart(s) failed
+
+
+Showing logs for build [32mjstrachan-environment-bucketrep-wh4gs-1[0m stage [32mpr-checks[0m and container [32mstep-lint-helmfile-apps[0m
+Adding repo dev http://bucketrepo/bucketrepo/charts/
+"dev" has been added to your repositories
+
+Adding repo jenkins-x http://chartmuseum.jenkins-x.io
+"jenkins-x" has been added to your repositories
+
+Adding repo zloeber git+https://github.com/rawlingsj/helm-namespace@chart
+"zloeber" has been added to your repositories
+
+Updating repo
+Hang tight while we grab the latest from your chart repositories...
+...Successfully got an update from the "dev" chart repository
+...Successfully got an update from the "zloeber" chart repository
+...Successfully got an update from the "jenkins-x" chart repository
+Update Complete. ⎈ Happy Helming!⎈ 
+
+Fetching zloeber/namespace
+Fetching dev/godemo30
+Fetching dev/godemo37
+in ./helmfile.yaml: 2 errors:
+err 0: helm exited with status 1:
+  Error: chart "godemo30" matching 0.0.9 not found in dev index. (try 'helm repo update'): no chart name found
+[31m
+Pipeline failed on stage 'pr-checks' : container 'step-lint-helmfile-apps'. The execution of the pipeline has stopped.[0m
