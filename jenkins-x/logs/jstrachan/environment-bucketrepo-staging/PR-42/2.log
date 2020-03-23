@@ -1,0 +1,71 @@
+
+Showing logs for build [32mjstrachan-environment-bucketrep-vqbhp-2[0m stage [32mpr-checks[0m and container [32mstep-credential-initializer-c52nb[0m
+{"level":"warn","ts":1584972544.8155105,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1584972544.823,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mjstrachan-environment-bucketrep-vqbhp-2[0m stage [32mpr-checks[0m and container [32mstep-working-dir-initializer-k77sl[0m
+{"level":"warn","ts":1584972546.138623,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1584972546.1403472,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mjstrachan-environment-bucketrep-vqbhp-2[0m stage [32mpr-checks[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mjstrachan-environment-bucketrep-vqbhp-2[0m stage [32mpr-checks[0m and container [32mstep-git-source-jstrachan-environment-bucketrep-vqbhp-8pclf[0m
+{"level":"warn","ts":1584972551.244893,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1584972552.3616464,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*********/environment-bucketrepo-staging.git @ master in path /workspace/source"}
+
+Showing logs for build [32mjstrachan-environment-bucketrep-vqbhp-2[0m stage [32mpr-checks[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:9cf21734dad6f2c1d3f07b3e73f5152856c1707c,42:d3287987ca94347c1682b91f0f67d2b007cb63e4
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git fetch origin --unshallow d3287987ca94347c1682b91f0f67d2b007cb63e4: 9cf21734dad6f2c1d3f07b3e73f5152856c1707c:
+DEBUG: ran git fetch --unshallow origin d3287987ca94347c1682b91f0f67d2b007cb63e4: 9cf21734dad6f2c1d3f07b3e73f5152856c1707c: in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git branch
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git checkout master
+DEBUG: ran git checkout master in 
+DEBUG: JX_LOG_LEVEL=error LC_ALL=C git reset --hard 9cf21734dad6f2c1d3f07b3e73f5152856c1707c
+DEBUG: ran git reset --hard 9cf21734dad6f2c1d3f07b3e73f5152856c1707c in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git clean -fd .
+DEBUG: ran clean --force -d . in 
+DEBUG: JX_LOG_LEVEL=error LC_ALL=C git merge d3287987ca94347c1682b91f0f67d2b007cb63e4
+DEBUG: ran git merge d3287987ca94347c1682b91f0f67d2b007cb63e4 in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git log --format=%H%x1f%an%x1f%ae%x1f%cn%x1f%ce%x1f%s%n%b%x1e 9cf21734dad6f2c1d3f07b3e73f5152856c1707c..HEAD
+
+Showing logs for build [32mjstrachan-environment-bucketrep-vqbhp-2[0m stage [32mpr-checks[0m and container [32mstep-create-helmfile[0m
+
+Showing logs for build [32mjstrachan-environment-bucketrep-vqbhp-2[0m stage [32mpr-checks[0m and container [32mstep-lint-helmfile-system[0m
+Adding repo dev http://bucketrepo/bucketrepo/charts/
+"dev" has been added to your repositories
+
+Adding repo jenkins-x https://storage.googleapis.com/chartmuseum.jenkins-x.io
+"jenkins-x" has been added to your repositories
+
+Updating repo
+Hang tight while we grab the latest from your chart repositories...
+...Successfully got an update from the "dev" chart repository
+...Successfully got an update from the "jenkins-x" chart repository
+Update Complete. ⎈ Happy Helming!⎈ 
+
+Fetching jenkins-x/empty
+Linting release=empty, chart=/tmp/669593850/empty/latest/jenkins-x/empty/empty
+==> Linting /tmp/669593850/empty/latest/jenkins-x/empty/empty
+
+1 chart(s) linted, 0 chart(s) failed
+
+
+Showing logs for build [32mjstrachan-environment-bucketrep-vqbhp-2[0m stage [32mpr-checks[0m and container [32mstep-lint-helmfile-apps[0m
+Adding repo dev http://bucketrepo/bucketrepo/charts/
+"dev" has been added to your repositories
+
+Adding repo jenkins-x http://chartmuseum.jenkins-x.io
+"jenkins-x" has been added to your repositories
+
+Updating repo
+Hang tight while we grab the latest from your chart repositories...
+...Successfully got an update from the "dev" chart repository
+...Successfully got an update from the "jenkins-x" chart repository
+Update Complete. ⎈ Happy Helming!⎈ 
+
+Fetching dev/godemo40
+Linting release=godemo40, chart=/tmp/158047644/godemo40/0.0.10/dev/godemo40/godemo40
+==> Linting /tmp/158047644/godemo40/0.0.10/dev/godemo40/godemo40
+
+1 chart(s) linted, 0 chart(s) failed
+
