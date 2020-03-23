@@ -1,34 +1,34 @@
 
-Showing logs for build [32mjstrachan-environment-bucketrep-trrms-2[0m stage [32mrelease[0m and container [32mstep-credential-initializer-79fmz[0m
-{"level":"warn","ts":1584703295.5150478,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1584703295.5182695,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Showing logs for build [32mjstrachan-environment-bucketrep-bn87n-2[0m stage [32mrelease[0m and container [32mstep-credential-initializer-b74pw[0m
+{"level":"warn","ts":1584955491.2390409,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1584955491.2397377,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
 
-Showing logs for build [32mjstrachan-environment-bucketrep-trrms-2[0m stage [32mrelease[0m and container [32mstep-working-dir-initializer-bj49r[0m
-{"level":"warn","ts":1584703296.520655,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
-{"level":"info","ts":1584703296.5218189,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+Showing logs for build [32mjstrachan-environment-bucketrep-bn87n-2[0m stage [32mrelease[0m and container [32mstep-working-dir-initializer-d7bht[0m
+{"level":"warn","ts":1584955492.2590318,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1584955492.2609897,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
 
-Showing logs for build [32mjstrachan-environment-bucketrep-trrms-2[0m stage [32mrelease[0m and container [32mstep-place-tools[0m
+Showing logs for build [32mjstrachan-environment-bucketrep-bn87n-2[0m stage [32mrelease[0m and container [32mstep-place-tools[0m
 
-Showing logs for build [32mjstrachan-environment-bucketrep-trrms-2[0m stage [32mrelease[0m and container [32mstep-git-source-jstrachan-environment-bucketrep-trrms-m5mjb[0m
-{"level":"warn","ts":1584703304.7583475,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1584703305.8253345,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*********/environment-bucketrepo-staging.git @ v0.0.32 in path /workspace/source"}
+Showing logs for build [32mjstrachan-environment-bucketrep-bn87n-2[0m stage [32mrelease[0m and container [32mstep-git-source-jstrachan-environment-bucketrep-bn87n-zb2kl[0m
+{"level":"warn","ts":1584955500.3435621,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1584955501.4910216,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*********/environment-bucketrepo-staging.git @ v0.0.45 in path /workspace/source"}
 
-Showing logs for build [32mjstrachan-environment-bucketrep-trrms-2[0m stage [32mrelease[0m and container [32mstep-git-merge[0m
-Using SHAs from PULL_REFS=master:f954b4e68e87e616bae17b9f92e7a55d4e2fab84
+Showing logs for build [32mjstrachan-environment-bucketrep-bn87n-2[0m stage [32mrelease[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:370d90017398a1182716dd94b5598c79d89b287c
 WARNING: no SHAs to merge, falling back to initial cloned commit
 
-Showing logs for build [32mjstrachan-environment-bucketrep-trrms-2[0m stage [32mrelease[0m and container [32mstep-validate-git[0m
+Showing logs for build [32mjstrachan-environment-bucketrep-bn87n-2[0m stage [32mrelease[0m and container [32mstep-validate-git[0m
 Git configured for user: jenkins-x-bot and email jenkins-x@googlegroups.com
 
-Showing logs for build [32mjstrachan-environment-bucketrep-trrms-2[0m stage [32mrelease[0m and container [32mstep-verify-preinstall[0m
+Showing logs for build [32mjstrachan-environment-bucketrep-bn87n-2[0m stage [32mrelease[0m and container [32mstep-verify-preinstall[0m
 disabling ** step verify preinstall as using a local environment
 
-Showing logs for build [32mjstrachan-environment-bucketrep-trrms-2[0m stage [32mrelease[0m and container [32mstep-install-jx-crds[0m
+Showing logs for build [32mjstrachan-environment-bucketrep-bn87n-2[0m stage [32mrelease[0m and container [32mstep-install-jx-crds[0m
 Jenkins X CRDs upgraded with success
 
-Showing logs for build [32mjstrachan-environment-bucketrep-trrms-2[0m stage [32mrelease[0m and container [32mstep-generate-helmfile[0m
+Showing logs for build [32mjstrachan-environment-bucketrep-bn87n-2[0m stage [32mrelease[0m and container [32mstep-generate-helmfile[0m
 
-Showing logs for build [32mjstrachan-environment-bucketrep-trrms-2[0m stage [32mrelease[0m and container [32mstep-helmfile-system[0m
+Showing logs for build [32mjstrachan-environment-bucketrep-bn87n-2[0m stage [32mrelease[0m and container [32mstep-helmfile-system[0m
 Adding repo dev http://bucketrepo/bucketrepo/charts/
 "dev" has been added to your repositories
 
@@ -47,14 +47,14 @@ Affected releases are:
 Upgrading release=empty, chart=jenkins-x/empty
 Release "empty" has been upgraded. Happy Helming!
 NAME: empty
-LAST DEPLOYED: Fri Mar 20 11:22:09 2020
+LAST DEPLOYED: Mon Mar 23 09:25:23 2020
 NAMESPACE: **-staging
 STATUS: deployed
-REVISION: 3
+REVISION: 8
 TEST SUITE: None
 
 Listing releases matching ^empty$
-empty	**-staging	3       	2020-03-20 11:22:09.028707016 +0000 UTC	deployed	empty-0.0.3	           
+empty	**-staging	8       	2020-03-23 09:25:23.532502148 +0000 UTC	deployed	empty-0.0.3	           
 
 
 UPDATED RELEASES:
@@ -62,12 +62,12 @@ NAME    CHART             VERSION
 empty   jenkins-x/empty     0.0.3
 
 
-Showing logs for build [32mjstrachan-environment-bucketrep-trrms-2[0m stage [32mrelease[0m and container [32mstep-verify-ingress[0m
+Showing logs for build [32mjstrachan-environment-bucketrep-bn87n-2[0m stage [32mrelease[0m and container [32mstep-verify-ingress[0m
 Waiting to find the external host name of the ingress controller Service in namespace istio-system with name istio-ingressgateway
 No domain flag provided so using default 35.240.16.53.nip.io to generate Ingress rules
 defaulting the domain to 35.240.16.53.nip.io and modified /workspace/source/**-requirements.yml
 
-Showing logs for build [32mjstrachan-environment-bucketrep-trrms-2[0m stage [32mrelease[0m and container [32mstep-helmfile-apps[0m
+Showing logs for build [32mjstrachan-environment-bucketrep-bn87n-2[0m stage [32mrelease[0m and container [32mstep-helmfile-apps[0m
 Adding repo dev http://bucketrepo/bucketrepo/charts/
 "dev" has been added to your repositories
 
@@ -81,46 +81,42 @@ Hang tight while we grab the latest from your chart repositories...
 Update Complete. ⎈ Happy Helming!⎈ 
 
 Affected releases are:
-  godemo37 (dev/godemo37) UPDATED
+  godemo40 (dev/godemo40) UPDATED
 
-Upgrading release=godemo37, chart=dev/godemo37
-Release "godemo37" does not exist. Installing it now.
-NAME: godemo37
-LAST DEPLOYED: Fri Mar 20 11:22:16 2020
+Upgrading release=godemo40, chart=dev/godemo40
+Release "godemo40" has been upgraded. Happy Helming!
+NAME: godemo40
+LAST DEPLOYED: Mon Mar 23 09:25:30 2020
 NAMESPACE: **-staging
 STATUS: deployed
-REVISION: 1
+REVISION: 9
 TEST SUITE: None
+Listing releases matching ^godemo40$
 NOTES:
 Get the application URL by running these commands:
 
-kubectl get ingress godemo37-godemo37
+kubectl get ingress godemo40-godemo40
 
-Listing releases matching ^godemo37$
-godemo37	**-staging	1       	2020-03-20 11:22:16.625501382 +0000 UTC	deployed	godemo37-0.0.2	0.0.2      
+godemo40	**-staging	9       	2020-03-23 09:25:30.834262959 +0000 UTC	deployed	godemo40-0.0.9	0.0.9      
 
 
 UPDATED RELEASES:
 NAME       CHART          VERSION
-godemo37   dev/godemo37     0.0.2
+godemo40   dev/godemo40     0.0.9
 
 
-Showing logs for build [32mjstrachan-environment-bucketrep-trrms-2[0m stage [32mrelease[0m and container [32mstep-git-creds[0m
+Showing logs for build [32mjstrachan-environment-bucketrep-bn87n-2[0m stage [32mrelease[0m and container [32mstep-git-creds[0m
 Generated Git credentials file /builder/home/git/credentials
 
-Showing logs for build [32mjstrachan-environment-bucketrep-trrms-2[0m stage [32mrelease[0m and container [32mstep-verify-jenkins-x-environment[0m
+Showing logs for build [32mjstrachan-environment-bucketrep-bn87n-2[0m stage [32mrelease[0m and container [32mstep-verify-jenkins-x-environment[0m
 disabling ** step verify env as using a local environment
 
-Showing logs for build [32mjstrachan-environment-bucketrep-trrms-2[0m stage [32mrelease[0m and container [32mstep-install-pipelines[0m
+Showing logs for build [32mjstrachan-environment-bucketrep-bn87n-2[0m stage [32mrelease[0m and container [32mstep-install-pipelines[0m
 
-Showing logs for build [32mjstrachan-environment-bucketrep-trrms-2[0m stage [32mrelease[0m and container [32mstep-update-webhooks[0m
+Showing logs for build [32mjstrachan-environment-bucketrep-bn87n-2[0m stage [32mrelease[0m and container [32mstep-update-webhooks[0m
 DEBUG: Finding service url for hook in namespace **
 DEBUG: Couldn't find service url, attempting to look up via ingress
 DEBUG: found service url http://hook-**.35.240.16.53.nip.io
-Updating webhooks for Owner: jenkins-x-labs and Repository: jenkins-x-versions in git server: https://github.com
-Checking hooks for repository jenkins-x-labs/jenkins-x-versions with user *********
-Found matching hook for url http://hook-**.35.240.16.53.nip.io/hook
-Updating GitHub webhook for jenkins-x-labs/jenkins-x-versions for url http://hook-**.35.240.16.53.nip.io/hook
 Updating webhooks for Owner: ********* and Repository: environment-bucketrepo-dev in git server: https://github.com
 Checking hooks for repository *********/environment-bucketrepo-dev with user *********
 Found matching hook for url http://hook-**.35.240.16.53.nip.io/hook
@@ -133,34 +129,28 @@ Updating webhooks for Owner: ********* and Repository: environment-bucketrepo-st
 Checking hooks for repository *********/environment-bucketrepo-staging with user *********
 Found matching hook for url http://hook-**.35.240.16.53.nip.io/hook
 Updating GitHub webhook for *********/environment-bucketrepo-staging for url http://hook-**.35.240.16.53.nip.io/hook
-Updating webhooks for Owner: ********* and Repository: godemo35 in git server: https://github.com
-Checking hooks for repository *********/godemo35 with user *********
+Updating webhooks for Owner: ********* and Repository: godemo40 in git server: https://github.com
+Checking hooks for repository *********/godemo40 with user *********
 Found matching hook for url http://hook-**.35.240.16.53.nip.io/hook
-Updating GitHub webhook for *********/godemo35 for url http://hook-**.35.240.16.53.nip.io/hook
-Updating webhooks for Owner: ********* and Repository: godemo36 in git server: https://github.com
-Checking hooks for repository *********/godemo36 with user *********
-Found matching hook for url http://hook-**.35.240.16.53.nip.io/hook
-Updating GitHub webhook for *********/godemo36 for url http://hook-**.35.240.16.53.nip.io/hook
-Updating webhooks for Owner: ********* and Repository: godemo37 in git server: https://github.com
-Checking hooks for repository *********/godemo37 with user *********
-Found matching hook for url http://hook-**.35.240.16.53.nip.io/hook
-Updating GitHub webhook for *********/godemo37 for url http://hook-**.35.240.16.53.nip.io/hook
+Updating GitHub webhook for *********/godemo40 for url http://hook-**.35.240.16.53.nip.io/hook
 Updating webhooks for Owner: ********* and Repository: nodey434 in git server: https://github.com
 Checking hooks for repository *********/nodey434 with user *********
 Found matching hook for url http://hook-**.35.240.16.53.nip.io/hook
 Updating GitHub webhook for *********/nodey434 for url http://hook-**.35.240.16.53.nip.io/hook
 
-Showing logs for build [32mjstrachan-environment-bucketrep-trrms-2[0m stage [32mrelease[0m and container [32mstep-verify-installation[0m
+Showing logs for build [32mjstrachan-environment-bucketrep-bn87n-2[0m stage [32mrelease[0m and container [32mstep-verify-installation[0m
 verifying the Jenkins X installation in namespace **
 verifying pods
 Checking pod statuses
 POD                                                        STATUS
 bucketrepo-bucketrepo-6c9567bd96-fckn8                     Running
-**-boot-jtsz6                                              Succeeded
 **boot-helmfile-resources-controllerbuild-7fd45857c5-4vqss Running
 **boot-helmfile-resources-controllerrole-7cbc5bcc6-5j745   Running
-lighthouse-lighthouse-56dbcf9889-mb64w                     Running
-lighthouse-lighthouse-56dbcf9889-rxffv                     Running
+**boot-helmfile-resources-gcactivities-1584954000-s64mk    Succeeded
+**boot-helmfile-resources-gcpods-1584954000-8c2kp          Succeeded
+**boot-helmfile-resources-gcpreviews-1584954000-hlxbc      Succeeded
+lighthouse-lighthouse-6f4cdcd7c7-gs9x7                     Running
+lighthouse-lighthouse-6f4cdcd7c7-rm6wt                     Running
 tekton-pipelines-controller-666488cbd5-d9wvf               Running
 tide-55566677dd-rn56n                                      Running
 Verifying the git config
